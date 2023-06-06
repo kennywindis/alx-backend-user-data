@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-""" App module """
+""" App Module """
 from flask import Flask, jsonify, request, abort, redirect
 from auth import Auth
 app = Flask(__name__)
 AUTH = Auth()
 
-
 @app.route('/', methods=['GET'], strict_slashes=False)
 def welcome():
     """ Basic Flask app, return a JSON """
     return jsonify({"message": "Bienvenue"})
-
 
 @app.route('/users', methods=['POST'], strict_slashes=False)
 def users():
