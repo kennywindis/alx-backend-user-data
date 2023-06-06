@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Hash password, Register user, Credentials validation, Generate UUIDs,
+""" Hash password, Register user,
     Find user by session ID, Destroy session, Generate reset password token,
     Update password """
 import bcrypt
