@@ -55,4 +55,3 @@ class SessionExpAuth(SessionAuth):
         if expiry_time < datetime.now():
             return None
         return session_dict.get('user_id')
-    
